@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="case.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html" class="active">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\Case.png" alt="CPU" id="cpu">
+            <h1 id="head">Case</h1>
+            <p id="text">Computer Cases serves as an external protection for internal computer components such as the Motherboard.
+                It may also serve as a way to express an individual through various external designs that may attain an individual's
+                preference.
+            </p>
+        </div>
+        
+  <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\15.png" alt="Case">
+        <p class="category">Case</p>
+        <p class="name">HYTE Y70</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\16.png" alt="Case">
+        <p class="category">Case</p>
+        <p class="name">GroundZERO Vision V2</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\24.png" alt="Case">
+        <p class="category">Case</p>
+        <p class="name">Inplay Meteor 03</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Design: <span class="score">Fishtank</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Color: <span class="score">Black, White, Red, and Snow White</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Height:  <span class="score">470 mm</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Width:  <span class="score">320 mm</span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="gpu.html" class="compatible">ASUS ROG Strix RTX 5070 TI (GPU)</span></a>
+          <a href="mobo.html" class="compatible">MSI MAG X870E Tomahawk WiFi (Motherboard)</span></a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>HYTE Y70</h3>
+        <img src="\Parts_Images\15.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> HYTE</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to HYTE</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQrnB" target="_blank" class="sponsor">Lazada</a>
+                <span>~17,175.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQrzQ" target="_blank" class="sponsor">Lazada</a>
+                <span>~17,175.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQrA9" target="_blank" class="sponsor">Lazada</a>
+                <span>~25,450.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/6FNQ3jY7" target="_blank" class="sponsor">Shoppee</a>
+                <span>~13,699.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/SjfmNXtT" target="_blank" class="sponsor">Shoppee</a>
+                <span>~29,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/Vedka4t2" target="_blank" class="sponsor">Shoppee</a>
+                <span>~28,500.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Design: <span class="score">Fishtank</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Color: <span class="score">Black,and White</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Height:  <span class="score">430 mm</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Width:  <span class="score">285 mm</span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="gpu.html" class="compatible">ASUS ROG Strix RTX 5070 TI (GPU)</span></a>
+          <a href="mobo.html" class="compatible">ASUS Dual GeForce RTX 5060 (Motherboard)</span></a>
+          <a href="psu.html" class="compatible">Seasonic FOCUS GX-850 (PSU)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>GroundZERO Vision V2</h3>
+        <img src="\Parts_Images\16.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> GroundZERO</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to GroundZERO</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/12th-generation-intel-core-i5-12400-25ghz-cpu-i2720358631.html" target="_blank" class="sponsor">Lazada</a>
+                  <span>~100PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Intel%C2%AE-Core%E2%84%A2-i5-12400F-18M-Cache-up-to-4.40-GHz-12th-Gen-Processor-i.20959443.21183161273" target="_blank" class="sponsor">Shoppee</a>
+                <span>~100PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Design: <span class="score">Tower</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Color: <span class="score">Black</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Height: <span class="score">450 mm</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Width: <span class="score">200 mm</span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="gpu.html" class="compatible">NVIDIA Colorful GTX 1660 Super (GPU)</a>
+          <a href="mobo.html" class="compatible">MSI A520M-A Pro (Motherboard)</a>
+          <a href="psu.html" class="compatible">Seasonic FOCUS GX-850 (PSU)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Inplay Meteor 03</h3>
+        <img src="\Parts_Images\24.png" alt="Inplay Meteor 03 Case">
+        <div class="details">
+          <p><strong>Brand:</strong> Inplay</p>
+          <p><strong>Manufactured date:</strong> 2020</p>
+          <p class="credits">Credits to Inplay</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4696344680-s27104498823.html" target="_blank" class="sponsor">Lazada</a>
+                  <span>~1,000.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4360856691-s132974021414.html" target="_blank" class="sponsor">Lazada</a>
+                <span>~1,399.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4950407535-s28874647881.html" target="_blank" class="sponsor">Lazada</a>
+                <span>~1,153.46 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/462016051/25416371100" target="_blank" class="sponsor">Shoppee</a>
+                <span>~1,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Inplay-Meteor-03-ATX-PC-Mid-Tower-Case-Gaming-Computer-Chassis-Desktop-With-Tempered-Glass-fan-i.28596781.24578548265" target="_blank" class="sponsor">Shoppee</a>
+                <span>~1,990.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Inplay-Meteor-03-Black-White-Tempered-Glass-Mesh-Front-ATX-PC-Case-Inplay-by-EJD-i.817750649.18164062523" target="_blank" class="sponsor">Shoppee</a>
+                <span>~1,357.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

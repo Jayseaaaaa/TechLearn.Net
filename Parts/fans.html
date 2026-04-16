@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="fans.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/pabout.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html" class="active">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\Cooler.png" alt="CPU" id="cpu">
+            <h1 id="head">Coolers</h1>
+            <p id="text">The Coolers helps reduce internal heat for each component through air or liquid cooling.
+                Overheating of computer components may cause malfunctions, in which coolers such as fans
+                provide cool air for each component to run accordingly.
+            </p>
+        </div>
+
+  <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\3.png" alt="Cooler">
+        <p class="category">Cooler</p>
+        <p class="name">ASUS ROG Ryuo IV SLC 360 ARGB</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\12.png" alt="Cooler">
+        <p class="category">Cooler</p>
+        <p class="name">Thermalright Wonder Vision 360 UB ARGB</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\23.png" alt="Cooler">
+        <p class="category">Cooler</p>
+        <p class="name">AMD Stock Cooler Wraith Stealth</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Loudness: <span class="score">39.6 dBA</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Cooling: <span class="score">Liquid Cooling</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Color:  <span class="score">Black/ White</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Lights:  <span class="score">RGB (Display)</span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">Intel Core i7-14700K (Zen 5) (CPU)</span></a>
+          <a href="mobo.html" class="compatible"> ASUS ROG Strix Z790-I Gaming WiFi (Motherboard)</span></a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</span></a>
+          <a href="case.html" class="compatible">HYTE Y70 (Case)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>ASUS ROG Ryuo IV SLC 360 ARGB</h3>
+        <img src="\Parts_Images\3.png" alt="Cooler A">
+        <div class="details">
+          <p><strong>Brand:</strong> ASUS</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to ASUS</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQQ39" target="_blank" class="sponsor">Lazada</a>
+                <span>~19,989.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQQSU" target="_blank" class="sponsor">Lazada</a>
+                <span>~19,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQQNw" target="_blank" class="sponsor">Lazada</a>
+                <span>~19,895.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/sMedF4y3" target="_blank" class="sponsor">Shoppee</a>
+                <span>~19,989.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/HxHzBtJa" target="_blank" class="sponsor">Shoppee</a>
+                <span>~19,995.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/puj7Xez7" target="_blank" class="sponsor">Shoppee</a>
+                <span>~17,550.00 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Loudness: <span class="score">up to 47 dBA</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Cooling: <span class="score">Liquid Cooling</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Color:  <span class="score">Black/ White</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Lights:  <span class="score">RGB (Display)</span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 7 9850X3D (Zen 5) (CPU)</span></a>
+          <a href="mobo.html" class="compatible">MSI MAG X870E Tomahawk WiFi (Motherboard)</span></a>
+          <a href="psu.html" class="compatible">Seasonic FOCUS GX-850 (PSU)</span></a>
+          <a href="case.html" class="compatible">GroundZERO Vision V2 (Case)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Thermalright Wonder Vision 360 UB ARGB</h3>
+        <img src="\Parts_Images\12.png" alt="Cooler B">
+        <div class="details">
+          <p><strong>Brand:</strong> Thermalright</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to Thermalright</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQQIr" target="_blank" class="sponsor">Lazada</a>
+                <span>~13,880.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQQwn" target="_blank" class="sponsor">Lazada</a>
+                <span>~15,100.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQQAC" target="_blank" class="sponsor">Lazada</a>
+                <span>~17,963.51 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/iMha87rF" target="_blank" class="sponsor">Shoppee</a>
+                <span>14,899.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/ytJaPrvr" target="_blank" class="sponsor">Shoppee</a>
+                <span>~13,799.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/kdsr583C" target="_blank" class="sponsor">Shoppee</a>
+                <span>~13,600.00 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Loudness: <span class="score">up to 35 dBA</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Cooling: <span class="score">Fan</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Color: <span class="score">Black / White</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Lights: <span class="score">N/A</span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 5 5600g (CPU)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>AMD Stock Cooler</h3>
+        <img src="\Parts_Images\23.png" alt="AMD Stock Cooler">
+        <div class="details">
+          <p><strong>Brand:</strong> AMD</p>
+          <p><strong>Manufactured date:</strong> 2021</p>
+          <p class="credits">Credits to AMD</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <span>N/A</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

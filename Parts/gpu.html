@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="gpu.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html" class="active">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\GPU.png" alt="CPU" id="cpu">
+            <h1 id="head">GPU</h1>
+            <p id="text">The graphics processing unit (GPU) is a specialized computer component designed for digital image processing and to 
+                accelerate computer graphics, being present either as a component on a discrete graphics card or embedded on motherboards. </p>
+        </div>
+  <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\1.png" alt="GPU">
+        <p class="category">GPU</p>
+        <p class="name">ASUS Dual GeForce RTX 5060</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\14.png" alt="GPU">
+        <p class="category">GPU</p>
+        <p class="name">ASUS ROG Strix RTX 5070 TI</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\18.png" alt="GPU">
+        <p class="category">GPU</p>
+        <p class="name">NVIDIA Colorful GTX 1660 Super</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">82/100</span></div>
+          <div class="progress"><span style="width:82%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Rendering: <span class="score">75/100</span></div>
+          <div class="progress"><span style="width:75%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Video Editing: <span class="score">78/100</span></div>
+          <div class="progress"><span style="width:78%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">VRAM: <span class="score">8GB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Watching: <span class="score">78/100</span></div>
+          <div class="progress"><span style="width:78%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">Intel Core i7-14700K (CPU)</a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>ASUS Dual GeForce RTX 5060</h3>
+        <img src="\Parts_Images\1.png" alt="GPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> ASUS</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to ASUS</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZ8z0J" target="_blank" class="sponsor">Lazada</a>
+                <span>~29,116.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/RCGyHS3y" target="_blank" class="sponsor">Shoppee</a>
+                <span>~28,371.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/ScrkefxZ" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,824.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZ8pt3" target="_blank" class="sponsor">Lazada</a>
+                <span>~25,589.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/yFrNy7jB" target="_blank" class="sponsor">Shoppee</a>
+                <span>~25,589.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZ8z2P" target="_blank" class="sponsor">Lazada</a>
+                <span>~25,359.15 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Rendering: <span class="score">92/100</span></div>
+          <div class="progress"><span style="width:92%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Video Editing: <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">VRAM:  <span class="score">16GB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Watching: <span class="score">94/100</span></div>
+          <div class="progress"><span style="width:94%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 7 9850X3D (Zen 5) (CPU)</a>
+          <a href="psu.html" class="compatible">Seasonic FOCUS GX-850 (PSU)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>ASUS ROG Strix RTX 5070 TI</h3>
+        <img src="\Parts_Images\14.png" alt="GPU B">
+        <div class="details">
+          <p><strong>Brand:</strong> ASUS</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to ASUS</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZ8zIm" target="_blank" class="sponsor">Lazada</a>
+                <span>~86,080.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZ8pFB" target="_blank" class="sponsor">Lazada</a>
+                <span>~86,080.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZ8zHS" target="_blank" class="sponsor">Lazada</a>
+                <span>~86,070.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/AmhHK1hz" target="_blank" class="sponsor">Shoppee</a>
+                <span>~85,470.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/aaUQHfZK" target="_blank" class="sponsor">Shoppee</a>
+                <span>~84,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/SNrHaZTg" target="_blank" class="sponsor">Shoppee</a>
+                <span>~80,999.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Gaming <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Rendering <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Video Editing <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 5 5600G (CPU)</a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>NVIDIA Colorful GTX 1660 Super</h3>
+        <img src="\Parts_Images\18.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> NVIDIA</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to NVIDIA</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/used-colorful-geforce-gtx-1660-super-6g-graphics-card-6gb-gddr6-192bit-1530mhz-1785mhz-dphddvi-video-card-i3814741566-s20314982094.html?dsource=share&laz_share_info=2851855726_0_100_500017622726_2851857726_null&laz_token=8bc77961eeb58169101ef589105d3c9d&exlaz=e_02ORYuQNKp7Gip8qo24MCZFmNCmP6gU%2FnnWa525VocjCXvTKdNAtBZ9M7OhatQZXzRRrDZgMHzeuMScOJ7o6d%2FuxtDhefxtiD3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=2851855726&sub_id3=500017622726&sub_id6=CPI_EXLAZ" target="_blank" class="sponsor">Lazada</a>
+                  <span>~12,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pinklehub-colorful-geforce-gtx-1660-super-nb-6g-v2-v-graphics-card-i4103089177-s22623006976.html?dsource=share&laz_share_info=2851853723_0_100_500017622726_2851855723_null&laz_token=07ba1cecffc3300e23843f1ff725e8e2&exlaz=e_02ORYuQNKp7Gip8qo24MCZFmNCmP6gU%2FnnWa525VocjCXvTKdNAtBZ9M7OhatQZXzRRrDZgMHzeuMScOJ7o6d%2FuxtDhefxtiD3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=2851853723&sub_id3=500017622726&sub_id6=CPI_EXLAZ" target="_blank" class="sponsor">Lazada</a>
+                <span>~16,272.50 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i3814741566-s20314982094.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Agtx%252B1660%252Bsuper%253Bnid%253A3814741566%253Bsrc%253ALazadaMainSrp%253Brn%253Adbeb5b56e8d4b40edb4834769b269cd6%253Bregion%253Aph%253Bsku%253A3814741566_PH%253Bprice%253A12999%253Bclient%253Adesktop%253Bsupplier_id%253A500161371028%253Bsession_id%253A%253Bbiz_source%253Ah5_internal%253Bslot%253A18%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5157%253Bitem_id%253A3814741566%253Bsku_id%253A20314982094%253Bshop_id%253A1256164%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=&price=12999&priceCompare=skuId%3A20314982094%3Bsource%3Alazada-search-voucher%3Bsn%3Adbeb5b56e8d4b40edb4834769b269cd6%3BoriginPrice%3A1299900%3BdisplayPrice%3A1299900%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1776300773234&qSellingPoint=p--gtx%201660%20super&ratingscore=&request_id=dbeb5b56e8d4b40edb4834769b269cd6&review=&sale=0&search=1&source=search&spm=a2o4l.searchlist.list.18&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~12,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/NVIDIA-Geforce-GTX-1660-Super-6GB-Gaming-Graphics-Cards-GTX-1660S-GPU-6GB-DDR6-14000MHz-1785-MHz-~1830-MHz-192bit-1660s-Video-Card-i.721493043.23333913393?extraParams=%7B%22display_model_id%22%3A175745565417%2C%22model_selection_logic%22%3A3%7D&sp_atk=ffd564b0-a162-40c1-af68-c53025a1dacb&xptdk=ffd564b0-a162-40c1-af68-c53025a1dacb" target="_blank" class="sponsor">Shopee</a>
+                <span>~11,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/USED-Gigabyte-GeForce-GTX-1660-Super-6GB-PC-Gaming-graphics-card-i.1399289459.26867846167?extraParams=%7B%22display_model_id%22%3A108513177529%2C%22model_selection_logic%22%3A3%7D&sp_atk=1240db0f-84a8-402b-89c1-da0e787eeab4&xptdk=1240db0f-84a8-402b-89c1-da0e787eeab4" target="_blank" class="sponsor">Shopee</a>
+                <span>~10,003.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/1399289107/29617845101?d_id=70a13&uls_trackid=55dh20ap02ra&utm_content=2J39r3ZvTdXfjpLJCbLLeLsevgwq" target="_blank" class="sponsor">Shopee</a>
+                <span>~8,762.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

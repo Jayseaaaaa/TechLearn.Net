@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="ram.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html" class="active">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\RAM.png" alt="CPU" id="cpu">
+            <h1 id="head">RAM</h1>
+            <p id="text">The Random-access memory (RAM) is a form of computer memory that can be read and changed in any order, 
+                typically used to store working data and machine code. A random-access memory device allows data items to be read or 
+                written in almost the same amount of time irrespective of the physical location of data inside the memory.</p>
+        </div>
+
+          <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\11.png" alt="RAM">
+        <p class="category">RAM</p>
+        <p class="name">Teampgroup T-Force Delta RGB</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\6.png" alt="RAM">
+        <p class="category">RAM</p>
+        <p class="name">G.SKILL TRIDENT Z5 NEO RGB</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\19.png" alt="RAM">
+        <p class="category">RAM</p>
+        <p class="name">Kingston Fury Beast</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Capacity: <span class="score">32GB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Speed: <span class="score">6000/6400MHz</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Generation: <span class="score">CL32 DDR5</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">Intel i7-14700K (CPU)</span></a>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming WiFi (Motherboard)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Teampgroup T-Force Delta RGB</h3>
+        <img src="\Parts_Images\11.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> Teampgroup</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to Teampgroup</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjRit" target="_blank" class="sponsor">Lazada</a>
+                <span>~24,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjRQh" target="_blank" class="sponsor">Lazada</a>
+                <span>~24,950.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjRP2" target="_blank" class="sponsor">Lazada</a>
+                <span>~25,450.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/CGdo3zhJ" target="_blank" class="sponsor">Shoppee</a>
+                <span>~24,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/E78g5H5T" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,199.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/U2Fr2scd" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,455.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Capacity: <span class="score">16/32GB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Speed: <span class="score">6000MHz</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Generation:  <span class="score">CL30 DDR5</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">88/100</span></div>
+          <div class="progress"><span style="width:88%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 7 9850X3D (Zen5) (CPU)</span></a>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming Wifi(Motherboard)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>G.SKILL TRIDENT Z5 NEO RGB</h3>
+        <img src="\Parts_Images\6.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong>G.SKILL</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to G.SKILL</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjLga" target="_blank" class="sponsor">Lazada</a>
+                <span>~24,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjL8Y" target="_blank" class="sponsor">Lazada</a>
+                <span>~24,950.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjLj5" target="_blank" class="sponsor">Lazada</a>
+                <span>~25,450.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/hMwD83km" target="_blank" class="sponsor">Shoppee</a>
+                <span>~24,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/GQWtxjqD" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,199.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/bfd5w7Cf" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,455.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Capacity <span class="score">2x 16GB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Speed <span class="score">3600MHz</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Generation <span class="score">DDR4 RGB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 5 5600G (CPU)</a>
+          <a href="mobo.html" class="compatible">MSI MAG X870E Tomahawk WiFi (Motherboard)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Kingston Fury Beast</h3>
+        <img src="\Parts_Images\19.png" alt="Kingston Fury Beast RAM">
+        <div class="details">
+          <p><strong>Brand:</strong> Kingston</p>
+          <p><strong>Manufactured date:</strong> 2021</p>
+          <p class="credits">Credits to Kingston</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/free-shippingkingston-fury-beast-rgb-ddr4-ram-8gb-16gb-32gb-240026663200mhz-12v-dimm-288pin-desktop-computer-memory-i4051578216-s22013477245.html" target="_blank" class="sponsor">Lazada</a>
+                  <span>~6,560.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4051578216-s22013477245.html" target="_blank" class="sponsor">Lazada</a>
+                <span>~6,560.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/free-shippingkingston-beast-rgb-ddr4-ram-8gb-16gb-32002666mhz-pc4-2130025600-fury-dimm-288pin-12v-desktop-memory-i3740234880-s19745096088.html" target="_blank" class="sponsor">Lazada</a>
+                <span>~6,560.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Kingston-Fury-Beast-RGB-DDR4-8GB-3200Mhz-CL16-Desktop-Memory-i.21380649.4953197333" target="_blank" class="sponsor">Shoppee</a>
+                <span>~5,995.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/1560273281/43861520964" target="_blank" class="sponsor">Shoppee</a>
+                <span>~5,588.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/1420653780/28075714154" target="_blank" class="sponsor">Shoppee</a>
+                <span>~5,489.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

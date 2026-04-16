@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="mobo.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html" class="active">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\MoBo.png" alt="CPU" id="cpu">
+            <h1 id="head">Motherboard</h1>
+            <p id="text">The motherboard  is the main printed circuit board (PCB) in general-purpose computers and other expandable systems. 
+                It holds and allows communication between many of the crucial computer components, such as the central processing unit (CPU) and memory, and provides connectors for other peripherals.</p>
+        </div>
+
+          <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\8.png" alt="Motherboard">
+        <p class="category">Motherboard</p>
+        <p class="name">MSI MAG X870E Tomahawk WiFi</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\4.png" alt="Motherboard">
+        <p class="category">Motherboard</p>
+        <p class="name">ASUS ROG Strix Z790-I Gaming WiFi</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\20.png" alt="Motherboard">
+        <p class="category">Motherboard</p>
+        <p class="name">MSI A520M-A Pro</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Speed: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">92/100</span></div>
+          <div class="progress"><span style="width:92%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Ports & Connectivity: <span class="score">Wi-Fi 7</span></div>
+          <div style="font-size: 12px; color: #ccc; margin-top: 8px; line-height: 1.6;">
+            <strong>USB:</strong> 2x USB 3.2 Gen 2, 2x USB 3.2 Gen 1, 2x USB 2.0, 1x USB4 Type-C<br>
+            <strong>Ethernet:</strong> 1x 5 Gb (RJ-45)<br>
+            <strong>Audio:</strong> 5x 3.5mm, 1x S/PDIF Digital<br>
+            <strong>Display:</strong> 1x HDMI<br>
+            <strong>Memory:</strong> DDR5, 4x DIMM, up to 256GB, 8400+ MT/s (OC)
+          </div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 7 9850X3D (Zen 5) (CPU)</a>
+          <a href="gpu.html" class="compatible">ASUS Dual GeForce RTX 5060 (GPU) </a>
+          <a href="ram.html" class="compatible">Teamgroup T-Force Delta RGB (Memory)</a>
+          <a href="ssd.html" class="compatible">Samsung 9100 Pro PCle 5.0 NVMe M.2 (Storage)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>MSI MAG X870E Tomahawk WiFi</h3>
+        <img src="\Parts_Images\8.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> MSI</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to MSI</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjZ6Q" target="_blank" class="sponsor">Lazada</a>
+                <span>~24,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjZsG" target="_blank" class="sponsor">Lazada</a>
+                <span>~24,950.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZj0fX" target="_blank" class="sponsor">Lazada</a>
+                <span>~25,450.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/E1sHxx9W" target="_blank" class="sponsor">Shoppee</a>
+                <span>~24,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/urN1fSYj" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,199.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/QuP4y4g3" target="_blank" class="sponsor">Shoppee</a>
+                <span>~26,455.00 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Speed: <span class="score">97/100</span></div>
+          <div class="progress"><span style="width:97%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Ports & Connectivity: <span class="score">Wi-Fi 6E</span></div>
+          <div style="font-size: 12px; color: #ccc; margin-top: 8px; line-height: 1.6;">
+            <strong>USB-C:</strong> 1x Thunderbolt 4 (40 Gbps)<br>
+            <strong>USB-A:</strong> 4x USB 3.2 Gen 2, 2x USB 2.0<br>
+            <strong>Ethernet:</strong> 1x 2.5 Gb (RJ-45)<br>
+            <strong>Audio:</strong> 5x 3.5mm, 1x S/PDIF Digital<br>
+            <strong>Display:</strong> 1x HDMI 2.1<br>
+            <strong>Memory:</strong> DDR5, 2x DIMM, up to 96GB, 7600+ MHz (OC)
+          </div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">Intel Core i7 - 14700K (CPU)</a>
+          <a href="gpu.html" class="compatible">ASUS Dual GeForce RTX 5060 (GPU) </a>
+          <a href="ram.html" class="compatible">Teamgroup T-Force Delta RGB (Memory)</a>
+          <a href="ssd.html" class="compatible">Samsung 9100 Pro PCle 5.0 NVMe M.2 (Storage)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>ASUS ROG Strix Z790-I Gaming WiFi</h3>
+        <img src="\Parts_Images\4.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> ASUS</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to ASUS</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjc3i" target="_blank" class="sponsor">Lazada</a>
+                <span>~29,535.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZjcSp" target="_blank" class="sponsor">Lazada</a>
+                <span>~29,535.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZj4of" target="_blank" class="sponsor">Lazada</a>
+                <span>~29,535.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/fgQZn42o" target="_blank" class="sponsor">Shoppee</a>
+                <span>~29,850.00 PHP</span>
+              </div>
+              <!-- Wrong Motherboard -->
+              <div class="link-row">
+                <a href="https://ph.shp.ee/jVuhFKgP" target="_blank" class="sponsor">Shoppee</a>
+                <span>~25,389.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/jVuhFKgP" target="_blank" class="sponsor">Shoppee</a>
+                <span>~25,389.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Speed: <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Ports & Connectivity: <span class="score">Wi-Fi 6</span></div>
+          <div style="font-size: 12px; color: #ccc; margin-top: 8px; line-height: 1.6;">
+            <strong>PCIe:</strong> 1x PCIe 3.0 x16 slot<br>
+            <strong>Storage:</strong> 1x M.2 Gen3 slot, 4x SATA III ports<br>
+            <strong>USB (Rear I/O):</strong> 4x USB 3.2 Gen 1 (5Gbps) Type-A, 2x USB 2.0<br>
+            <strong>Display:</strong> HDMI, DVI-D<br>
+            <strong>Ethernet:</strong> Realtek RTL8111H Gigabit LAN<br>
+            <strong>Memory:</strong> DDR4, 2x DIMM, up to 64GB, 3200MHz+
+          </div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 5 5600g (CPU)</a>
+          <a href="gpu.html" class="compatible">GTX 1660 Super (GPU) </a>
+          <a href="ram.html" class="compatible">Kingston Fury Beast 16GB (Memory)</a>
+          <a href="ssd.html" class="compatible">Samsung 9100 Pro PCle 5.0 NVMe M.2 (Storage)</a>
+          <a href="case.html" class="compatible">Inplay Meteor 03 (Case)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>MSI A520M-A Pro</h3>
+        <img src="\Parts_Images\20.png" alt="Motherboard">
+        <div class="details">
+          <p><strong>Brand:</strong> MSI</p>
+          <p><strong>Manufactured date:</strong> 2021</p>
+          <p class="credits">Credits to MSI</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/funhouse-msi-amd-a520m-a-pro-motherboard-socket-am4-supported-i4275262673-s31149187958.html" target="_blank" class="sponsor">Lazada</a>
+                  <span>~3,723.02 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/easypc-msi-a520m-a-pro-am4-socket-ddr4-motherboard-for-desktop-pc-i1936328916-s8337422326.html" target="_blank" class="sponsor">Lazada</a>
+                <span>~3,345.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i2288412284-s10333555944.html" target="_blank" class="sponsor">Lazada</a>
+                <span>~3,380.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/EasyPC-MSI-A520m-A-Pro-Socket-Am4-Motherboard-Ddr4-MATX-i.77398075.9653822629" target="_blank" class="sponsor">Shoppee</a>
+                <span>~3,707.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/49044769/54552294916" target="_blank" class="sponsor">Shoppee</a>
+                <span>~3,395.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

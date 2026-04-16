@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="/Image/Favicon Icon.png">
+  <link rel="stylesheet" href="cpu.css">
+  <title>TechLearn</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="/Image/Icon.png" alt="TechLearn Logo">
+      <span>TechLearn</span>
+    </div>
+    <ul class="navbar">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/parts.html" class="active">Parts</a></li>
+      <li><a href="/about.html">About Us</a></li>
+    </ul>
+    <!--Sign In-->
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul> 
+      <li><a href="Parts/cpu.html" class="active"><span class="title">CPU</span></a></li>
+      <li><a href="/Parts/gpu.html"><span class="title">GPU</span></a></li>
+      <li><a href="/Parts/mobo.html"><span class="title">Motherboard</span></a></li>
+      <li><a href="/Parts/ram.html"><span class="title">Memory</span></a></li>
+      <li><a href="/Parts/ssd.html"><span class="title">Storage</span></a></li>
+      <li><a href="/Parts/psu.html"><span class="title">PSU</span></a></li>
+      <li><a href="/Parts/fans.html"><span class="title">Coolers</span></a></li>
+      <li><a href="/Parts/case.html"><span class="title">Case</span></a></li>
+    </ul>
+  </div>
+        
+  <!-- Info Section -->
+  <div class="info">
+    <img src="/Icons/CPU.png" alt="CPU" id="cpu">
+    <h1 id="head">CPU</h1>
+    <p id="text">
+      The central processing unit (CPU), also called a processor, is the primary processor 
+      in a computer. The CPU executes instructions of a computer program, such as arithmetic, logic, controlling,
+      and input/output operations. It works alongside with the Graphics Processing Unit (GPU).
+    </p>
+  </div>
+
+  <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\2.png" alt="CPU">
+        <p class="category">CPU</p>
+        <p class="name">AMD Ryzen 7 9850X3D (Zen 5)</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\7.png" alt="CPU">
+        <p class="category">CPU</p>
+        <p class="name">Intel Core i7-14700K</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\17.png" alt="CPU">
+        <p class="category">CPU</p>
+        <p class="name">AMD Ryzen 5 5600G</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Browsing: <span class="score">85/100</span></div>
+          <div class="progress"><span style="width:85%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Work: <span class="score">82/100</span></div>
+          <div class="progress"><span style="width:82%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">87/100</span></div>
+          <div class="progress"><span style="width:87%"></span></div>
+        </div>
+
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming Wifi (Motherboard)</span></a>
+          <a href="ram.html" class="compatible">Teamgroup T-Force Delta (Memory)</span></a>
+          <a href="ssd.html" class="compatible">Samsung 9100 Pro PCle 5.0 NVMe M.2 (Storage)</span></a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</span></a>
+          <a href="fans.html" class="compatible">ASUS ROG Ryou IV SLC 360 ARGB (Cooler)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>AMD Ryzen 7 9850X3D (Zen 5)</h3>
+        <img src="\Parts_Images\2.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> AMD</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to AMD</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZFXIU" target="_blank" class="sponsor">Lazada</a>
+                <span>~37,450.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i1410548225.html?spm=a2o4l.searchlist.list.5.42922e2e7mk9WE" target="_blank" class="sponsor">Lazada</a>
+                <span>~36,399.00 PHP</span>
+              </div>
+              <div class="link-row"> 
+                <a href="https://s.lazada.com.ph/s.ZZFXJd" target="_blank" class="sponsor">Lazada</a>
+                <span>~29,489.00 PHP</span>
+              </div> 
+              <div class="link-row">
+                <a href="https://shopee.ph/AMD-Ryzen-7-9850X3D-8-Core-16-Threads-Desktop-Processor-i.379168804.42528743823?extraParams=%7B%22display_model_id%22%3A330559186539%2C%22model_selection_logic%22%3A3%7D" target="_blank" class="sponsor">Shoppee</a>
+                <span>~36,995.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/AMD-Ryzen-7-9850X3D-8-Core-16-Threads-Desktop-Processor-i.124930893.42328743019?extraParams=%7B%22display_model_id%22%3A405558611693%2C%22model_selection_logic%22%3A3%7D" target="_blank" class="sponsor">Shoppee</a>
+                <span>~36,995.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/AMD-Ryzen-7-9800X3D-CPU-Series-DDR5-AM5-8-Cores-16-Threads-Zen-5-Desktop-Processor-itw-i.89762129.24188203468?extraParams=%7B%22display_model_id%22%3A280056009959%2C%22model_selection_logic%22%3A3%7D" target="_blank" class="sponsor">Shoppee</a>
+                <span>~34,999.00 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Gaming: <span class="score">90/100</span></div>
+          <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Browsing: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Work: <span class="score">92/100</span></div>
+          <div class="progress"><span style="width:92%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">88/100</span></div>
+          <div class="progress"><span style="width:88%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming Wifi (Motherboard)</span></a>
+          <a href="ram.html" class="compatible">Teamgroup T-Force Delta (Memory)</span></a>
+          <a href="ssd.html" class="compatible">WD Black SN8100 PCle5.0 NVMe SSD (Storage)</span></a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</span></a>
+          <a href="fans.html" class="compatible">ASUS ROG Ryou IV SLC 360 ARGB (Cooler)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Intel Core i7-14700K</h3>
+        <img src="\Parts_Images\7.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> Intel</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to Intel</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4172288530.html?spm=a2o4l.searchlist.list.1.48622806EeVSF8" target="_blank" class="sponsor">Lazada</a>
+                <span>~27,375.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZFXYj" target="_blank" class="sponsor">Lazada</a>
+                <span>~28,999.00 PHP</span>  
+              </div> 
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4154014608.html?spm=a2o4l.searchlist.list.357.48622806bkz8AI" target="_blank" class="sponsor">Lazada</a>
+                <span>~28,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Itw-Intel-Core-i7-14700K-33MB-Cache-up-to-5.60Ghz-Desktop-Processor-i.89762129.18994599219?extraParams=%7B%22display_model_id%22%3A232172342506%2C%22model_selection_logic%22%3A3%7D&sp_atk=454edc3f-2d03-4694-a986-4b4df8364925&xptdk=454edc3f-2d03-4694-a986-4b4df8364925" target="_blank" class="sponsor">Shoppee</a>
+                <span>~27,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Intel-Core-i7-14700K-33M-Cache-up-to-5.60GHz-LGA-1700-Processor-i.122081568.23384152045?extraParams=%7B%22display_model_id%22%3A214668524432%2C%22model_selection_logic%22%3A3%7D&sp_atk=d6f3bf39-3c86-41bb-a019-1fd366a0791e&xptdk=d6f3bf39-3c86-41bb-a019-1fd366a0791e" target="_blank" class="sponsor">Shoppee</a>
+                <span>~28,750.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/B6k4TEro" target="_blank" class="sponsor">Shoppee</a>
+                <span>~₱27,450.00 PHP</span>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Gaming <span class="score">92/100</span></div>
+          <div class="progress"><span style="width:92%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Working <span class="score">98/100</span></div>
+          <div class="progress"><span style="width:98%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Browsing <span class="score">100/100</span></div>
+          <div class="progress"><span style="width:100%"></span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall <span class="score">96.5/100</span></div>
+          <div class="progress"><span style="width:96.5%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="mobo.html" class="compatible">Msi A520M-A Pro (Motherboard)</a>
+          <a href="ram.html" class="compatible">Kingston Fury Beast DDR4 (Memory)</a>
+          <a href="ssd.html" class="compatible">Samsung 970 EVO PLUS (Storage)</a>
+          <a href="psu.html" class="compatible">Gigabyte P650B 80+ Bronze (PSU)</a>
+          <a href="fans.html" class="compatible">AMD Stock Cooler Wraith Spire Stealth Prism (Cooler)</a>
+          <a href="case.html" class="compatible">Inplay Meteor 03 (Case)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>AMD Ryzen 5 5600G</h3>
+        <img src="\Parts_Images\17.png" alt="CPU A">
+        <div class="details">
+          <p><strong>Brand:</strong> AMD</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
+          <p class="credits">Credits to AMD</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/amd-ryzen-5-5600gt-36-ghz-six-core-am4-processor-i3268173985-s16492691869.html?dsource=share&laz_share_info=2851859985_0_100_500017622726_2851861985_null&laz_token=b48fcef9f817f1324ea3f7ce753c2626&exlaz=e_02ORYuQNKp7Gip8qo24MCZFmNCmP6gU%2FnnWa525VocjCXvTKdNAtBZ9M7OhatQZXzRRrDZgMHzeuMScOJ7o6d%2FuxtDhefxtiD3WnASIas1Y%3D&sub_aff_id=social_share&sub_id2=2851859985&sub_id3=500017622726&sub_id6=CPI_EXLAZ" target="_blank" class="sponsor">Lazada</a>
+                <span>~9,355.67 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i2237395345-s10078178601.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Aamd%252Bryzen%252B5%252B5600g%253Bnid%253A2237395345%253Bsrc%253ALazadaMainSrp%253Brn%253A9bf294bec5d4bf0f69974e64b38e75f3%253Bregion%253Aph%253Bsku%253A2237395345_PH%253Bprice%253A9022.75%253Bclient%253Adesktop%253Bsupplier_id%253A100027113%253Bsession_id%253A%253Bbiz_source%253Ah5_hp%253Bslot%253A3%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5158%253Bitem_id%253A2237395345%253Bsku_id%253A10078178601%253Bshop_id%253A1778%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~Quezon%20City&price=9022.75&priceCompare=skuId%3A10078178601%3Bsource%3Alazada-search-voucher%3Bsn%3A9bf294bec5d4bf0f69974e64b38e75f3%3BoriginPrice%3A902275%3BdisplayPrice%3A902275%3BsinglePromotionId%3A900000651144716%3BsingleToolCode%3ApromPrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1776300726848&qSellingPoint=b--amd___p--ryzen%205%205600g&ratingscore=4.956756756756757&request_id=9bf294bec5d4bf0f69974e64b38e75f3&review=185&sale=426&search=1&source=search&spm=a2o4l.searchlist.list.3&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~9,022.75 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i3200337893-s16029321236.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Aamd%252Bryzen%252B5%252B5600g%253Bnid%253A3200337893%253Bsrc%253ALazadaMainSrp%253Brn%253A9bf294bec5d4bf0f69974e64b38e75f3%253Bregion%253Aph%253Bsku%253A3200337893_PH%253Bprice%253A9698%253Bclient%253Adesktop%253Bsupplier_id%253A500169726024%253Bsession_id%253A%253Bbiz_source%253Ah5_hp%253Bslot%253A9%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5158%253Bitem_id%253A3200337893%253Bsku_id%253A16029321236%253Bshop_id%253A1869979%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~Caloocan&price=9698&priceCompare=skuId%3A16029321236%3Bsource%3Alazada-search-voucher%3Bsn%3A9bf294bec5d4bf0f69974e64b38e75f3%3BoriginPrice%3A969800%3BdisplayPrice%3A969800%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1776300726848&qSellingPoint=b--amd___p--ryzen%205%205600g&ratingscore=4.926470588235294&request_id=9bf294bec5d4bf0f69974e64b38e75f3&review=67&sale=209&search=1&source=search&spm=a2o4l.searchlist.list.9&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~9,698.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/462016051/20861945119?d_id=70a13&uls_trackid=55dh1t5p01ra&utm_content=2J39r3ZvTdVKg3T6w12sb3HtTe1D" target="_blank" class="sponsor">Shopee</a>
+                <span>~8,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/AMD-Ryzen-3-5-4500-5500-5500GT-5600GT-5600X-5700G-5700X3d-5800x-Processor-i.50916350.9821011519?extraParams=%7B%22display_model_id%22%3A163351219528%2C%22model_selection_logic%22%3A3%7D&sp_atk=79120845-da5d-4b8c-800b-12f678791d53&xptdk=79120845-da5d-4b8c-800b-12f678791d53" target="_blank" class="sponsor">Shopee</a>
+                <span>~8,495.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/Ryzen-AMD-5-R5-5600G-3.9GHz-6-Core-12-Thread-65W-CPU-Processor-LGA-AM4-i.1543939359.28737554070?extraParams=%7B%22display_model_id%22%3A260375047723%2C%22model_selection_logic%22%3A3%7D&sp_atk=974f8698-2842-41d9-a2b1-529385081cdd&xptdk=974f8698-2842-41d9-a2b1-529385081cdd" target="_blank" class="sponsor">Shopee</a>
+                <span>~8,175.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="ssd.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html" class="active">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\SSD.png" alt="CPU" id="cpu">
+            <h1 id="head">SSD</h1>
+            <p id="text">A solid-state drive (SSD) is a type of solid-state 
+                storage device that uses integrated circuits to store data persistently. It provides permanent data location for downloaded softwares.
+                Unlike the Random-Access Memory (RAM), it is used for primary storage.</p>
+        </div>
+
+  <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\9.png" alt="SSD">
+        <p class="category">SSD</p>
+        <p class="name">Samsung 9100 Pro PCIe 5.0 NVMe M.2</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\13.png" alt="SSD">
+        <p class="category">SSD</p>
+        <p class="name">WD Black SN8100 PCIe 5.0 NVMe SSD</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\21.png" alt="SSD">
+        <p class="category">SSD</p>
+        <p class="name">Samsung 970 EVO PLUS</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Capacity: <span class="score">1TB/2TB/4TB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Speed: <span class="score">13,400MB/s / 14,800MB/s</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">98/100</span></div>
+          <div class="progress"><span style="width:98%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="mobo.html" class="compatible">MSI MAG X870E Tomahawk WiFi (Motherboard)</span></a>
+          <a href="psu.html" class="compatible">Seasonic FOCUS GX-850 (PSU)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Samsung 9100 Pro PCIe 5.0 NVMe M.2</h3>
+        <img src="\Parts_Images\9.png" alt="SSD A">
+        <div class="details">
+          <p><strong>Brand:</strong> Samsung</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to Samsung</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQ1Mh" target="_blank" class="sponsor">Lazada</a>
+                <span>~15,195.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQ1pi" target="_blank" class="sponsor">Lazada</a>
+                <span>~13,465.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQ1KB" target="_blank" class="sponsor">Lazada</a>
+                <span>~12,559.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/Uhmyu1Av" target="_blank" class="sponsor">Shoppee</a>
+                <span>~27,195.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/3w2KB3TU" target="_blank" class="sponsor">Shoppee</a>
+                <span>~17,699.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/oKTdKot9" target="_blank" class="sponsor">Shoppee</a>
+                <span>~29,195.00 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Capacity: <span class="score">1TB/2TB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Speed: <span class="score">14,000MB/s / 14,900MB/s</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">97/100</span></div>
+          <div class="progress"><span style="width:97%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming WiFi (Motherboard)</span></a>
+          <a href="psu.html" class="compatible">Corsair RM850e (PSU)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>WD Black SN8100 PCIe 5.0 NVMe SSD</h3>
+        <img src="\Parts_Images\13.png" alt="SSD B">
+        <div class="details">
+          <p><strong>Brand:</strong> WD</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to WD</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQ6xd" target="_blank" class="sponsor">Lazada</a>
+                <span>~14,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQ6Bd" target="_blank" class="sponsor">Lazada</a>
+                <span>~8,895.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://s.lazada.com.ph/s.ZZQhZm" target="_blank" class="sponsor">Lazada</a>
+                <span>~34,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/Yzm7PC7M" target="_blank" class="sponsor">Shoppee</a>
+                <span>~23,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/MXqukMyc" target="_blank" class="sponsor">Shoppee</a>
+                <span>~16,999.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://ph.shp.ee/k3EhVLTZ" target="_blank" class="sponsor">Shoppee</a>
+                <span>~16,999.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Capacity: <span class="score">500GB/1TB/2TB</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Speed: <span class="score">4,200 MB/s</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">92/100</span></div>
+          <div class="progress"><span style="width:92%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming WiFi (Motherboard)</a>
+          <a href="psu.html" class="compatible">Gigabyte P650B 80+ Bronze (PSU)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Samsung 970 EVO Plus</h3>
+        <img src="\Parts_Images\21.png" alt="Samsung 970 EVO Plus SSD">
+        <div class="details">
+          <p><strong>Brand:</strong> Samsung</p>
+          <p><strong>Manufactured date:</strong> 2019</p>
+          <p class="credits">Credits to Samsung</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products" target="_blank" class="sponsor">Lazada</a>
+                  <span>~11,957.32 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/search?keyword=Samsung%20970%20EVO%20Plus" target="_blank" class="sponsor">Shoppee</a>
+                <span>~₱18,590.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

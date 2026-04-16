@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image\png" href="\Image\Icon.png">
+    <link rel="stylesheet" href="psu.css">
+    <title>TechLearn</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="\Image\Icon.png" alt="TechLearn Logo"><span>TechLearn</span>
+        </div>
+
+         <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="cpu.html" class="active">Parts</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+
+
+    <div class="signin">
+        <a href="" class="usersignin"><i class="ri-user-3-fill"></i> Sign In</a>
+        <i class="ri-menu-line" id="menu"></i>
+    </div>
+    </header>
+
+            <div class="sidebar">
+            <ul> 
+                <!--CPU-->
+                <li>
+                    <a href="cpu.html">
+                        <span class="title">CPU</span>
+                    </a>
+                </li>
+                <!--GPU-->
+                <li>
+                    <a href="gpu.html">
+                        <span class="title">GPU</span>
+                    </a>
+                </li>
+                <!--Motherboard-->
+                <li>
+                    <a href="mobo.html">
+                        <span class="title">Motherboard</span>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="ram.html">
+                        <span class="title">Memory</span>
+                    </a>
+                </li>
+                <!--SSD-->
+                <li>
+                    <a href="ssd.html">
+                        <span class="title">Storage</span>
+                    </a>
+                </li>
+                <!--PSU-->
+                <li>
+                    <a href="psu.html" class="active">
+                        <span class="title">PSU</span>
+                    </a>
+                </li>
+                <!--Fans-->
+                <li>
+                    <a href="fans.html">
+                        <span class="title">Coolers</span>
+                    </a>
+                </li>
+                <!--Case-->
+                <li>
+                    <a href="case.html">
+                        <span class="title">Case</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <img src="\Icons\PSU.png" alt="CPU" id="cpu">
+            <h1 id="head">PSU</h1>
+            <p id="text">The Power Supply Unit (PSU) converts mains AC to low-voltage regulated DC power for the internal components of a desktop computer. 
+                It provides electrical power to run each individual computer components such as the Motherboard for each component to execute accordingly.</p>
+        </div>
+
+  <!-- Parts Grid -->
+  <div class="parts-container">
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('A')">
+        <img src="\Parts_Images\5.png" alt="PSU">
+        <p class="category">PSU</p>
+        <p class="name">Corsair RM850e</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('B')">
+        <img src="\Parts_Images\10.png" alt="PSU">
+        <p class="category">PSU</p>
+        <p class="name">Seasonic FOCUS GX-850</p>
+      </a>
+    </div>
+    <div class="parts">
+      <a href="javascript:void(0)" onclick="openSpecs('C')">
+        <img src="\Parts_Images\22.png" alt="PSU">
+        <p class="category">PSU</p>
+        <p class="name">Gigabyte P650B 80+</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay A -->
+  <div class="overlay" id="specsOverlayA">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('A')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Wattage: <span class="score">850W</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Efficiency: <span class="score">80+ Gold</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Modularity:  <span class="score">Fully Modular</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Size:  <span class="score">ATX(150mm x 86 mm x 160mm)</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextA" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">AMD Ryzen 7 9850X3D (Zen 5) (CPU)</span></a>
+          <a href="gpu.html" class="compatible">ASUS Dual GeForce RTX 5060 OC  (GPU)</span></a>
+          <a href="mobo.html" class="compatible">MSI MAG X870E Tomahawk WiFi (Motherboard)</span></a>
+          <a href="ram.html" class="compatible">G.SKILL TRIDENT Z5 NEO RGB (Memory)</span></a>
+          <a href="ssd.html" class="compatible">Samsung 9100 Pro PCIe 5.0 NVMe M.2 (Storage)</span></a>
+          <a href="fans.html" class="compatible">Thermalright Wonder Vision 360 UB ARGB (Cooler)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Corsair RM850e</h3>
+        <img src="\Parts_Images\5.png" alt="PSU A">
+        <div class="details">
+          <p><strong>Brand:</strong> Corsair</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to Corsair</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i1145946070-s30099646227.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Acorsair%252Brm850%253Bnid%253A1145946070%253Bsrc%253ALazadaMainSrp%253Brn%253A4def969243c822d458c6a6374f4125cb%253Bregion%253Aph%253Bsku%253A1145946070_PH%253Bprice%253A8979%253Bclient%253Adesktop%253Bsupplier_id%253A24524%253Bsession_id%253A%253Bbiz_source%253Ah5_hp%253Bslot%253A1%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5151%253Bitem_id%253A1145946070%253Bsku_id%253A30099646227%253Bshop_id%253A26256%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~Manila&price=8979&priceCompare=skuId%3A30099646227%3Bsource%3Alazada-search-voucher%3Bsn%3A4def969243c822d458c6a6374f4125cb%3BoriginPrice%3A897900%3BdisplayPrice%3A897900%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1774965477055&ratingscore=4.875&request_id=4def969243c822d458c6a6374f4125cb&review=32&sale=91&search=1&source=search&spm=a2o4l.searchlist.list.1&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~8,979.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4222169155-s23457285440.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Acorsair%252Brm850%253Bnid%253A4222169155%253Bsrc%253ALazadaMainSrp%253Brn%253A4def969243c822d458c6a6374f4125cb%253Bregion%253Aph%253Bsku%253A4222169155_PH%253Bprice%253A8684.99%253Bclient%253Adesktop%253Bsupplier_id%253A497%253Bsession_id%253A%253Bbiz_source%253Ah5_hp%253Bslot%253A2%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5151%253Bitem_id%253A4222169155%253Bsku_id%253A23457285440%253Bshop_id%253A7399%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~Quezon%20City&price=8684.99&priceCompare=skuId%3A23457285440%3Bsource%3Alazada-search-voucher%3Bsn%3A4def969243c822d458c6a6374f4125cb%3BoriginPrice%3A868499%3BdisplayPrice%3A868499%3BsinglePromotionId%3A900000163185717%3BsingleToolCode%3ApromPrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1774965477055&ratingscore=5.0&request_id=4def969243c822d458c6a6374f4125cb&review=26&sale=66&search=1&source=search&spm=a2o4l.searchlist.list.2&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~8,685.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/corsair-rme-series-rm750erm850erm1000e-cybenetics-gold-low-noise-atx-fully-modular-power-supply-white-i5412853962-s132263270204.html?" target="_blank" class="sponsor">Lazada</a>
+                <span>~8,895.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/itechph/27280224631" target="_blank" class="sponsor">Shoppee</a>
+                <span>~8,495.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/corsair_philippines/41951660522" target="_blank" class="sponsor">Shoppee</a>
+                <span>~11,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/dynaquest/27280922792" target="_blank" class="sponsor">Shoppee</a>
+                <span>~9,185.00 PHP</span>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay B -->
+  <div class="overlay" id="specsOverlayB">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('B')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Wattage: <span class="score">850W</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Efficiency: <span class="score">80+ Gold</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Modularity:  <span class="score">Fully Modular</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Size:  <span class="score">ATX(150mm x 86 mm x 180mm)</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextB" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="cpu.html" class="compatible">Intel Core i7-14700K (CPU)</span></a>
+          <a href="gpu.html" class="compatible">ASUS ROG Strix RTX 5070 TI (GPU)</span></a>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming WiFi (Motherboard)</span></a>
+          <a href="ram.html" class="compatible">Teamgroup T-Force Delta RGB (Memory)</span></a>
+          <a href="ssd.html" class="compatible">WD Black SN8100 PCIe 5.0 NVMe SSD (Storage)</span></a>
+          <a href="fans.html" class="compatible">ASUS ROG Ryuo IV SLC 360 ARGB (Cooler)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Seasonic FOCUS GX-850</h3>
+        <img src="\Parts_Images\10.png" alt="PSU B">
+        <div class="details">
+          <p><strong>Brand:</strong> Seasonic</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
+          <p class="credits">Credits to Seasonic</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i5249206114-s31130836802.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Aseasonic%252BFOCUS%252Bgx-850%253Bnid%253A5249206114%253Bsrc%253ALazadaMainSrp%253Brn%253A755fe483ac79573cde84fc1ee1e4315e%253Bregion%253Aph%253Bsku%253A5249206114_PH%253Bprice%253A8499%253Bclient%253Adesktop%253Bsupplier_id%253A24524%253Bsession_id%253A%253Bbiz_source%253Ah5_internal%253Bslot%253A0%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5151%253Bitem_id%253A5249206114%253Bsku_id%253A31130836802%253Bshop_id%253A26256%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~Manila&price=8499&priceCompare=skuId%3A31130836802%3Bsource%3Alazada-search-voucher%3Bsn%3A755fe483ac79573cde84fc1ee1e4315e%3BoriginPrice%3A849900%3BdisplayPrice%3A849900%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1774965736463&ratingscore=5.0&request_id=755fe483ac79573cde84fc1ee1e4315e&review=7&sale=8&search=1&source=search&spm=a2o4l.searchlist.list.0&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~8,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4262810931-s23830278818.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Aseasonic%252BFOCUS%252Bgx-850%253Bnid%253A4262810931%253Bsrc%253ALazadaMainSrp%253Brn%253A755fe483ac79573cde84fc1ee1e4315e%253Bregion%253Aph%253Bsku%253A4262810931_PH%253Bprice%253A9499%253Bclient%253Adesktop%253Bsupplier_id%253A24524%253Bsession_id%253A%253Bbiz_source%253Ah5_internal%253Bslot%253A1%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5151%253Bitem_id%253A4262810931%253Bsku_id%253A23830278818%253Bshop_id%253A26256%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~Manila&price=9499&priceCompare=skuId%3A23830278818%3Bsource%3Alazada-search-voucher%3Bsn%3A755fe483ac79573cde84fc1ee1e4315e%3BoriginPrice%3A949900%3BdisplayPrice%3A949900%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1774965736463&ratingscore=5.0&request_id=755fe483ac79573cde84fc1ee1e4315e&review=20&sale=41&search=1&source=search&spm=a2o4l.searchlist.list.1&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~9,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i4888903771-s28453490692.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Aseasonic%252BFOCUS%252Bgx-850%253Bnid%253A4888903771%253Bsrc%253ALazadaMainSrp%253Brn%253A755fe483ac79573cde84fc1ee1e4315e%253Bregion%253Aph%253Bsku%253A4888903771_PH%253Bprice%253A7950%253Bclient%253Adesktop%253Bsupplier_id%253A1000091718%253Bsession_id%253A%253Bbiz_source%253Ah5_internal%253Bslot%253A2%253Butlog_bucket_id%253A470687%253Basc_category_id%253A5151%253Bitem_id%253A4888903771%253Bsku_id%253A28453490692%253Bshop_id%253A270178%253BtemplateInfo%253A107881_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=en&location=Metro%20Manila~San%20Juan&price=7.95E%203&priceCompare=skuId%3A28453490692%3Bsource%3Alazada-search-voucher%3Bsn%3A755fe483ac79573cde84fc1ee1e4315e%3BoriginPrice%3A795000%3BdisplayPrice%3A795000%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1774965736463&ratingscore=5.0&request_id=755fe483ac79573cde84fc1ee1e4315e&review=1&sale=5&search=1&source=search&spm=a2o4l.searchlist.list.2&stock=1" target="_blank" class="sponsor">Lazada</a>
+                <span>~7,950.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/itwitw/41270873243" target="_blank" class="sponsor">Shoppee</a>
+                <span>~8,499.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/dynaquest/28072753634" target="_blank" class="sponsor">Shoppee</a>
+                <span>~10,425.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/itwitw/41270873243" target="_blank" class="sponsor">Shoppee</a>
+                <span>~8,499.00 PHP</span>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay C -->
+  <div class="overlay" id="specsOverlayC">
+    <div class="card">
+      <a class="back-link" onclick="closeSpecs('C')"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+      <div class="left">
+        <h2>Specifications</h2>
+
+        <!-- Progress bars with scores inline -->
+        <div class="bar">
+          <div class="label">Wattage: <span class="score">650W</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Efficiency: <span class="score">80+ Bronze</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Size: <span class="score">ATX (150x140x86mm)</span></div>
+        </div>
+        <div class="bar">
+          <div class="label">Overall: <span class="score">95/100</span></div>
+          <div class="progress"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="hiddenContent" id="hiddenTextC" style="display: block; margin-top: 20px; font-size: 14px; color: #ddd;">
+          <div class="divider">
+          <p>Compatible with:</p> <br>
+          <a href="ssd.html" class="compatible">Samsung 970 EVO Plus (Storage)</a>
+          <a href="mobo.html" class="compatible">ASUS ROG Strix Z790-I Gaming WiFi (Motherboard)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Gigabyte P650B 80+ Bronze</h3>
+        <img src="\Parts_Images\22.png" alt="Gigabyte P650B PSU">
+        <div class="details">
+          <p><strong>Brand:</strong> Gigabyte</p>
+          <p><strong>Manufactured date:</strong> 2020</p>
+          <p class="credits">Credits to Gigabyte</p>
+            <div class="links">
+          <br><br>
+          <p>Where to Buy:</p>
+              <div class="link-row">
+                <a href="https://www.lazada.com.ph/products/pdp-i3450978725-s17719010291.html" target="_blank" class="sponsor">Lazada</a>
+                  <span>~3,021.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/14734330/18364695519" target="_blank" class="sponsor">Shoppee</a>
+                <span>~3,031.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/14734330/18364695519" target="_blank" class="sponsor">Shoppee</a>
+                <span>~3,031.00 PHP</span>
+              </div>
+              <div class="link-row">
+                <a href="https://shopee.ph/product/14734330/18364695519" target="_blank" class="sponsor">Shoppee</a>
+                <span>~3,031.00 PHP</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "flex";
+    }
+    function closeSpecs(which) {
+      document.getElementById("specsOverlay" + which).style.display = "none";
+    }
+    function toggleHidden(which) {
+      const hidden = document.getElementById("hiddenText" + which);
+      hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
