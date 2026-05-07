@@ -158,7 +158,7 @@
         <img src="\Parts_Images\1.png" alt="GPU A">
         <div class="details">
           <p><strong>Brand:</strong> ASUS</p>
-          <p><strong>Manufactured date:</strong> 2025</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
           <p class="credits">Credits to ASUS</p>
             <div class="links">
           <br><br>
@@ -235,7 +235,7 @@
         <img src="\Parts_Images\14.png" alt="GPU B">
         <div class="details">
           <p><strong>Brand:</strong> ASUS</p>
-          <p><strong>Manufactured date:</strong> 2025</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
           <p class="credits">Credits to ASUS</p>
             <div class="links">
           <br><br>
@@ -309,7 +309,7 @@
         <img src="\Parts_Images\18.png" alt="CPU A">
         <div class="details">
           <p><strong>Brand:</strong> NVIDIA</p>
-          <p><strong>Manufactured date:</strong> 2019</p>
+          <p><strong>Manufactured date:</strong> 2022</p>
           <p class="credits">Credits to NVIDIA</p>
             <div class="links">
           <br><br>
@@ -343,6 +343,35 @@
       </div>
     </div>
   </div>
+  <!-- Troubleshooting Section -->
+  <section class="troubleshooting-section">
+    <h2 class="section-title">Trouble Shooting Guide</h2>
+    
+    <div class="problem-container">
+      <h1>Problem 1: No display output</h1>
+      <p>Reseat GPU in PCIe slot.</p>
+      <p>Check PCIe power cables.</p>
+      <p>Test monitor and cable separately.</p>
+      <p>Try GPU in another system.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 2: Driver crashes/artifacts</h1>
+      <p>Use DDU to uninstall drivers.</p>
+      <p>Install latest drivers from manufacturer.</p>
+      <p>Lower overclock settings if applied.</p>
+      <p>Test with benchmark (FurMark).</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 3: Overheating during gaming</h1>
+      <p>Monitor temps with MSI Afterburner.</p>
+      <p>Clean dust from fans/heatsink.</p>
+      <p>Improve case airflow.</p>
+      <p>Replace thermal pads/paste if needed.</p>
+    </div>
+  </section>
+
   <script>
     function openSpecs(which) {
       document.getElementById("specsOverlay" + which).style.display = "flex";
@@ -353,6 +382,18 @@
     function toggleHidden(which) {
       const hidden = document.getElementById("hiddenText" + which);
       hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      const isOpen = faqItem.classList.contains("open");
+      
+      document.querySelectorAll(".faq-item").forEach(item => {
+        item.classList.remove("open");
+      });
+      
+      if (!isOpen) {
+        faqItem.classList.add("open");
+      }
     }
   </script>
 </body>

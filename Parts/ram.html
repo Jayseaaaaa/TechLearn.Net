@@ -154,7 +154,7 @@
         <img src="\Parts_Images\11.png" alt="CPU A">
         <div class="details">
           <p><strong>Brand:</strong> Teampgroup</p>
-          <p><strong>Manufactured date:</strong> 2018</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
           <p class="credits">Credits to Teampgroup</p>
             <div class="links">
           <br><br>
@@ -224,7 +224,7 @@
         <img src="\Parts_Images\6.png" alt="CPU A">
         <div class="details">
           <p><strong>Brand:</strong>G.SKILL</p>
-          <p><strong>Manufactured date:</strong> 2022</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
           <p class="credits">Credits to G.SKILL</p>
             <div class="links">
           <br><br>
@@ -329,6 +329,35 @@
       </div>
     </div>
   </div>
+  <!-- Troubleshooting Section -->
+  <section class="troubleshooting-section">
+    <h2 class="section-title">Trouble Shooting Guide</h2>
+    
+    <div class="problem-container">
+      <h1>Problem 1: Random crashes/reboots</h1>
+      <p>Test sticks individually.</p>
+      <p>Run MemTest86 overnight.</p>
+      <p>Reseat RAM firmly.</p>
+      <p>Replace faulty module.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 2: System not detecting full RAM</h1>
+      <p>Check BIOS for memory remapping.</p>
+      <p>Ensure sticks are in correct slots.</p>
+      <p>Update BIOS.</p>
+      <p>Test each stick separately.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 3: Memory errors in diagnostics</h1>
+      <p>Clean contacts with isopropyl alcohol.</p>
+      <p>Lower RAM speed in BIOS.</p>
+      <p>Replace defective stick.</p>
+      <p>Verify compatibility with motherboard.</p>
+    </div>
+  </section>
+
   <script>
     function openSpecs(which) {
       document.getElementById("specsOverlay" + which).style.display = "flex";
@@ -339,6 +368,18 @@
     function toggleHidden(which) {
       const hidden = document.getElementById("hiddenText" + which);
       hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      const isOpen = faqItem.classList.contains("open");
+      
+      document.querySelectorAll(".faq-item").forEach(item => {
+        item.classList.remove("open");
+      });
+      
+      if (!isOpen) {
+        faqItem.classList.add("open");
+      }
     }
   </script>
 </body>

@@ -160,7 +160,7 @@
         <img src="\Parts_Images\8.png" alt="CPU A">
         <div class="details">
           <p><strong>Brand:</strong> MSI</p>
-          <p><strong>Manufactured date:</strong> 2024</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
           <p class="credits">Credits to MSI</p>
             <div class="links">
           <br><br>
@@ -239,7 +239,7 @@
         <img src="\Parts_Images\4.png" alt="CPU A">
         <div class="details">
           <p><strong>Brand:</strong> ASUS</p>
-          <p><strong>Manufactured date:</strong> 2022</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
           <p class="credits">Credits to ASUS</p>
             <div class="links">
           <br><br>
@@ -320,7 +320,7 @@
         <img src="\Parts_Images\20.png" alt="Motherboard">
         <div class="details">
           <p><strong>Brand:</strong> MSI</p>
-          <p><strong>Manufactured date:</strong> 2020</p>
+          <p><strong>Manufactured date:</strong> 2021</p>
           <p class="credits">Credits to MSI</p>
             <div class="links">
           <br><br>
@@ -350,6 +350,35 @@
       </div>
     </div>
   </div>
+  <!-- Troubleshooting Section -->
+  <section class="troubleshooting-section">
+    <h2 class="section-title">Trouble Shooting Guide</h2>
+    
+    <div class="problem-container">
+      <h1>Problem 1: No POST/beep codes</h1>
+      <p>Check 24‑pin ATX and 8‑pin CPU power.</p>
+      <p>Reset CMOS battery/jumper.</p>
+      <p>Test with minimal hardware.</p>
+      <p>Inspect board for damage.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 2: USB/ports not working</h1>
+      <p>Update chipset drivers.</p>
+      <p>Test ports with multiple devices.</p>
+      <p>Check BIOS settings for disabled ports.</p>
+      <p>Inspect for physical damage.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 3: BIOS corruption</h1>
+      <p>Attempt BIOS recovery/reset.</p>
+      <p>Use manufacturer's flash tool.</p>
+      <p>Replace CMOS battery.</p>
+      <p>If failed, board may need RMA.</p>
+    </div>
+  </section>
+
   <script>
     function openSpecs(which) {
       document.getElementById("specsOverlay" + which).style.display = "flex";
@@ -360,6 +389,18 @@
     function toggleHidden(which) {
       const hidden = document.getElementById("hiddenText" + which);
       hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      const isOpen = faqItem.classList.contains("open");
+      
+      document.querySelectorAll(".faq-item").forEach(item => {
+        item.classList.remove("open");
+      });
+      
+      if (!isOpen) {
+        faqItem.classList.add("open");
+      }
     }
   </script>
 </body>

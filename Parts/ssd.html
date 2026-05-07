@@ -151,7 +151,7 @@
         <img src="\Parts_Images\9.png" alt="SSD A">
         <div class="details">
           <p><strong>Brand:</strong> Samsung</p>
-          <p><strong>Manufactured date:</strong> 2026</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
           <p class="credits">Credits to Samsung</p>
             <div class="links">
           <br><br>
@@ -219,7 +219,7 @@
         <img src="\Parts_Images\13.png" alt="SSD B">
         <div class="details">
           <p><strong>Brand:</strong> WD</p>
-          <p><strong>Manufactured date:</strong> 2026</p>
+          <p><strong>Manufactured date:</strong> 2023</p>
           <p class="credits">Credits to WD</p>
             <div class="links">
           <br><br>
@@ -305,6 +305,35 @@
       </div>
     </div>
   </div>
+  <!-- Troubleshooting Section -->
+  <section class="troubleshooting-section">
+    <h2 class="section-title">Trouble Shooting Guide</h2>
+    
+    <div class="problem-container">
+      <h1>Problem 1: Drive not detected</h1>
+      <p>Check SATA/NVMe connections.</p>
+      <p>Verify BIOS detection.</p>
+      <p>Try different cable/port.</p>
+      <p>Test drive in another PC.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 2: Slow performance</h1>
+      <p>Run CrystalDiskMark benchmark.</p>
+      <p>Check drive health with SMART.</p>
+      <p>Defragment HDD (not SSD).</p>
+      <p>Replace if performance degrades.</p>
+    </div>
+
+    <div class="problem-container">
+      <h1>Problem 3: Bad sectors/data corruption</h1>
+      <p>Run CHKDSK or manufacturer tool.</p>
+      <p>Backup data immediately.</p>
+      <p>Attempt repair with recovery software.</p>
+      <p>Replace failing drive.</p>
+    </div>
+  </section>
+
   <script>
     function openSpecs(which) {
       document.getElementById("specsOverlay" + which).style.display = "flex";
@@ -315,6 +344,18 @@
     function toggleHidden(which) {
       const hidden = document.getElementById("hiddenText" + which);
       hidden.style.display = hidden.style.display === "block" ? "none" : "block";
+    }
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      const isOpen = faqItem.classList.contains("open");
+      
+      document.querySelectorAll(".faq-item").forEach(item => {
+        item.classList.remove("open");
+      });
+      
+      if (!isOpen) {
+        faqItem.classList.add("open");
+      }
     }
   </script>
 </body>
